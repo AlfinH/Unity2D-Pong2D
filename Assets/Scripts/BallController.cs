@@ -13,6 +13,8 @@ public class BallController : MonoBehaviour
     Text scoreUIP2;
     GameObject panelSelesai;
     Text txPemenang;
+    AudioSource audio;
+    public AudioClip hitSound;
 
     // Use this for initialization
     void Start()
@@ -26,6 +28,7 @@ public class BallController : MonoBehaviour
         scoreUIP2 = GameObject.Find("Score2").GetComponent<Text>();
         panelSelesai = GameObject.Find("PanelSelesai");
         panelSelesai.SetActive(false);
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
+        audio.PlayOneShot(hitSound);
         if (coll.gameObject.name == "TepiKanan")
         {
             scoreP1 += 1;
