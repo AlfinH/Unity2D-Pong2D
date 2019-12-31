@@ -11,6 +11,8 @@ public class BallController : MonoBehaviour
     int scoreP2;
     Text scoreUIP1;
     Text scoreUIP2;
+    GameObject panelSelesai;
+    Text txPemenang;
 
     // Use this for initialization
     void Start()
@@ -22,6 +24,8 @@ public class BallController : MonoBehaviour
         scoreP2 = 0;
         scoreUIP1 = GameObject.Find("Score1").GetComponent<Text>();
         scoreUIP2 = GameObject.Find("Score2").GetComponent<Text>();
+        panelSelesai = GameObject.Find("PanelSelesai");
+        panelSelesai.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,6 +40,14 @@ public class BallController : MonoBehaviour
         {
             scoreP1 += 1;
             TampilkanScore();
+            if (scoreP1 == 5)
+            {
+                panelSelesai.SetActive(true);
+                txPemenang = GameObject.Find("Pemenang").GetComponent<Text>();
+                txPemenang.text = "Player Biru Pemenang!";
+                Destroy(gameObject);
+                return;
+            }
             ResetBall();
             Vector2 arah = new Vector2(2, 0).normalized;
             rigid.AddForce(arah * force);
@@ -44,6 +56,14 @@ public class BallController : MonoBehaviour
         {
             scoreP2 += 1;
             TampilkanScore();
+            if (scoreP2 == 5)
+            {
+                panelSelesai.SetActive(true);
+                txPemenang = GameObject.Find("Pemenang").GetComponent<Text>();
+                txPemenang.text = "Player Merah Pemenang!";
+                Destroy(gameObject);
+                return;
+            }
             ResetBall();
             Vector2 arah = new Vector2(-2, 0).normalized;
             rigid.AddForce(arah * force);
