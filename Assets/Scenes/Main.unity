@@ -153,10 +153,10 @@ RectTransform:
   m_Father: {fileID: 273029300}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2804375, y: 0.2846667}
-  m_AnchorMax: {x: 0.72200006, y: 0.5}
-  m_AnchoredPosition: {x: -1.5000305, y: 3.850006}
-  m_SizeDelta: {x: -4.299988, y: -7.699997}
+  m_AnchorMin: {x: 0.284, y: 0.39716667}
+  m_AnchorMax: {x: 0.71800005, y: 0.607375}
+  m_AnchoredPosition: {x: 2.149994, y: -2.1399841}
+  m_SizeDelta: {x: 5.700012, y: -2.699997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186730458
 MonoBehaviour:
@@ -177,7 +177,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6052d7a2266d1b349a5c670439d463da, type: 3}
+    m_Font: {fileID: 12800000, guid: 081a0f860e469084c953f648e86ebae0, type: 3}
     m_FontSize: 47
     m_FontStyle: 0
     m_BestFit: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player Merah Pemenang!
+  m_Text: Player Warna Pemenang!
 --- !u!222 &186730459
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -312,7 +313,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5a78f394b4395094caace24adaada61b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb22cd756f14b1748bbc50c7e8073ee9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -408,7 +409,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.053274192, b: 0.4528302, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -455,6 +456,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7734504d0f43a1458ae9dd8282dc26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEscapeToExit: 0
 --- !u!1 &580434963
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +527,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 1, g: 1, b: 0.46666667, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -619,7 +633,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6052d7a2266d1b349a5c670439d463da, type: 3}
+    m_Font: {fileID: 12800000, guid: 081a0f860e469084c953f648e86ebae0, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -631,7 +645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kembali Ke Main Manu
+  m_Text: Kembali Ke Main Menu
 --- !u!222 &627428759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -697,7 +711,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 1, g: 1, b: 0.46666667, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -845,7 +859,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 1, g: 1, b: 0.46666667, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -953,7 +967,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 1, g: 1, b: 0.46666667, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1084,7 +1098,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1355010168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420033}
+        m_MethodName: MulaiPermainan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1355010168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,8 +1128,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 6cbe2f5dc90d9af4cae95c8fe7678844, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1222,7 +1247,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.10181417, a: 1}
+  m_Color: {r: 0.8588236, g: 0.42352945, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1304,7 +1329,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 1, g: 1, b: 0.46666667, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1489,7 +1514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 200
-  hitSound: {fileID: 8300000, guid: 6cf3184012ca8554db6bfe98baee6dcc, type: 3}
+  hitSound: {fileID: 8300000, guid: ef954491295a276429f5ebd57ae8cd40, type: 3}
 --- !u!82 &1646988499
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1642,7 +1667,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6052d7a2266d1b349a5c670439d463da, type: 3}
+    m_Font: {fileID: 12800000, guid: 081a0f860e469084c953f648e86ebae0, type: 3}
     m_FontSize: 77
     m_FontStyle: 0
     m_BestFit: 0
@@ -1654,7 +1679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Permainan Selesai
+  m_Text: PERMAINAN SELESAI
 --- !u!222 &1752936543
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1719,7 +1744,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6052d7a2266d1b349a5c670439d463da, type: 3}
+    m_Font: {fileID: 12800000, guid: 081a0f860e469084c953f648e86ebae0, type: 3}
     m_FontSize: 86
     m_FontStyle: 0
     m_BestFit: 0
@@ -1897,7 +1922,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6052d7a2266d1b349a5c670439d463da, type: 3}
+    m_Font: {fileID: 12800000, guid: 081a0f860e469084c953f648e86ebae0, type: 3}
     m_FontSize: 86
     m_FontStyle: 0
     m_BestFit: 0
@@ -2003,7 +2028,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Color: {r: 0, g: 0.48235294, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.89019614, b: 0.0627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2099,7 +2124,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6052d7a2266d1b349a5c670439d463da, type: 3}
+    m_Font: {fileID: 12800000, guid: 081a0f860e469084c953f648e86ebae0, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
@@ -2201,7 +2226,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2083791599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420033}
+        m_MethodName: KembaliKeMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2083791599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2220,8 +2256,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc75322054d61aa45be1071262351284, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 6cbe2f5dc90d9af4cae95c8fe7678844, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

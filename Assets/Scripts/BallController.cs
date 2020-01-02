@@ -48,7 +48,7 @@ public class BallController : MonoBehaviour
             {
                 panelSelesai.SetActive(true);
                 txPemenang = GameObject.Find("Pemenang").GetComponent<Text>();
-                txPemenang.text = "Player Biru Pemenang!";
+                txPemenang.text = "Player Hijau Pemenang!";
                 Destroy(gameObject);
                 return;
             }
@@ -64,7 +64,7 @@ public class BallController : MonoBehaviour
             {
                 panelSelesai.SetActive(true);
                 txPemenang = GameObject.Find("Pemenang").GetComponent<Text>();
-                txPemenang.text = "Player Merah Pemenang!";
+                txPemenang.text = "Player Oren Pemenang!";
                 Destroy(gameObject);
                 return;
             }
